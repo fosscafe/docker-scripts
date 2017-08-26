@@ -3,8 +3,9 @@
                  --data-root /home/strikr/docker-data-root     \
                  --exec-root /home/strikr/docker-exec-root     \
                  --pidfile   /home/strikr/docker.pid           \
-                 -H tcp://0.0.0.0:2375                         \
-                 -H unix:///home/strikr/docker.sock
+                 -H fd://                               \
+                 -H unix:///home/strikr/docker.sock     \
+                 -H tcp://0.0.0.0:2375 
 
 
 #
